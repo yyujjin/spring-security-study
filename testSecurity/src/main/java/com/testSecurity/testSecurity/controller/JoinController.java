@@ -1,8 +1,10 @@
 package com.testSecurity.testSecurity.controller;
 
 import com.testSecurity.testSecurity.dto.JoinDTO;
+import com.testSecurity.testSecurity.service.JoinService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +13,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class JoinController {
 
     private static final Logger log = LoggerFactory.getLogger(JoinController.class);
+
+   private final JoinService joinService;
+
+    public JoinController(JoinService joinService) {
+        this.joinService = joinService;
+    }
+
 
     @GetMapping("/join")
     public String joinP() {
@@ -24,6 +33,8 @@ public class JoinController {
     public String joinProcess(JoinDTO joinDTO) {
 
         log.info("넘어온 dto : {}",joinDTO);
+
+        joinService.joinProcess(joinDTO);
 
         return "redirect:/login";
     }
