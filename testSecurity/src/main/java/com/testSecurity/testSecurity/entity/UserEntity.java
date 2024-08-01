@@ -1,9 +1,6 @@
 package com.testSecurity.testSecurity.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,12 +14,11 @@ public class UserEntity {
     private int id;
 
     
-    //가장 필수적인 회원 검증을 위한 로직을 만들기 위해서는 3개의 값은 필수적으로 들어가야함.
+
+    @Column(unique = true) //중복 허용 불가
     private String username;
     private String password;
 
-    //로그인 진행한 사용자가 권한이 나뉘게 됨 (어드민, 일반유저)
-    //권한을 저장할 role 값을 필수적으로 넣어야함. 
     private String role;
 
 }
