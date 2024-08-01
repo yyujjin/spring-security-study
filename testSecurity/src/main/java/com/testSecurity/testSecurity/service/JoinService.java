@@ -33,7 +33,9 @@ public class JoinService {
         UserEntity data = new UserEntity();
         data.setUsername(joinDTO.getUsername());
         data.setPassword(bCryptPasswordEncoder.encode(joinDTO.getPassword()));
-        data.setRole("ROLE_USER");
+        //회원가입시 모든 유저에 대해 그냥 유저라는 권한을 주기 위해 일시적으로 ADMIN이라는 권한으로 변경해줌
+        //회원가입을 진행하면 로그인이 되고 어드민으로 접근 가능한지 테스트해보기
+        data.setRole("ROLE_ADMIN");
         userRepository.save(data);
 
     }
