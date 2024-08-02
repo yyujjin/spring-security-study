@@ -36,6 +36,10 @@ public class SecurityConfig {
                             .maxSessionsPreventsLogin(true));
 
 
+        httpSecurity
+                .sessionManagement((auth) -> auth
+                        .sessionFixation().changeSessionId());
+
 
         //csrf 토큰 잠시 꺼둠
         httpSecurity.csrf((auth)->auth.disable());
