@@ -29,6 +29,14 @@ public class SecurityConfig {
                 .loginProcessingUrl("/loginProc").permitAll()
         );
 
+
+            httpSecurity
+                    .sessionManagement((auth) -> auth
+                            .maximumSessions(1)
+                            .maxSessionsPreventsLogin(true));
+
+
+
         //csrf 토큰 잠시 꺼둠
         httpSecurity.csrf((auth)->auth.disable());
 
