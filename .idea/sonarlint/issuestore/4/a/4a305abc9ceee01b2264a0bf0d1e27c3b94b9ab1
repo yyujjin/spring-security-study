@@ -1,10 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æä¨ 
-G
-java:S1611"2Remove the parentheses around the "auth" parameter(ÀÚÔV
-H
-java:S1611"2Remove the parentheses around the "auth" parameter(ˆÃ€‰
-H
-java:S1611!"2Remove the parentheses around the "auth" parameter(‡Ñ„Á
-‰
-java:S1128"nRemove this unused import 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity'.(É£þ«øÿÿÿÿ
