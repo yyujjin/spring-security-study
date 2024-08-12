@@ -1,0 +1,14 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æä¨ J$409aedea-1bdf-44fc-9d7b-155cfbecb1b3
+m
+java:S1611"2Remove the parentheses around the "auth" parameter(ÀÚÔVJ$66941eb9-6423-4e3e-a43b-45871db6a941
+n
+java:S1611"2Remove the parentheses around the "auth" parameter(ˆÃ€‰J$9c1a1852-ccfd-4f52-9b17-ddad0ac6b5d8
+n
+java:S1611""2Remove the parentheses around the "auth" parameter(ŒÄæÑJ$a9abd7c7-800d-463b-b081-2946b9fc91f0
+n
+java:S1611("2Remove the parentheses around the "auth" parameter(ŒÄæÑJ$7a5b71d6-6b05-4e2b-b2cf-f33c42a63324
+n
+java:S1611-"2Remove the parentheses around the "auth" parameter(‡Ñ„ÁJ$16220654-7e55-42ca-bc6b-92dcbcaa1577
+¯
+java:S1128"nRemove this unused import 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity'.(É£þ«øÿÿÿÿJ$48275255-596e-466a-83e4-4e90f1d4010d
